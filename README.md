@@ -26,7 +26,3 @@
 - **버전 관리**:
   - Git, GitHub
   <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-
-앞으로 더 다양한 기술을 익히고, 현재의 기술 스택을 심화시켜 나갈 계획입니다. 새로운 도전과 배움을 통해 지속적으로 성장해나가겠습니다.
-
-
