@@ -1,73 +1,137 @@
+# 최혁규
 
-## 🚶‍♂️ Journey
+### Software Developer \| Data · Automation · AI
 
-- **명지대학교 경영정보학과 졸업** (2018.03 ~ 2024.02)  
-  - 비즈니스 데이터 분석, ERP, 프로그래밍 기초 이해
+반복되는 업무와 운영 문제를 데이터·자동화로 해결해 온 개발자입니다.\
+기술 자체보다 업무 효율과 운영 안정성에 미치는 영향을 기준으로 해결
+방법을 선택합니다.
 
-- **멀티캠퍼스 백엔드(Java) 개발자 부트캠프 수료** (2023.09.11 ~ 2024.01.30)  
-  - Java, Spring 기반 서버 구조 및 REST API 설계 경험
+------------------------------------------------------------------------
 
-- **삼성 청년 소프트웨어 아카데미 (SSAFY) 12기 수료** (2024.07 ~ 2025.06)  
-  - Frontend: React, TypeScript, React Query, Zustand 기반 화면 개발 및 상태 관리
-  - Backend: Java, Spring Boot 기반 REST API 개발 및 DB 연동 경험
-  - Full-Stack: API 응답 구조, 캐싱, DB 저장 흐름을 고려한 서비스 기능 구현
-  - 팀 프로젝트에서 UI 구조 설계, 데이터 흐름 정리, 기능 단위 협업 구조 개선 경험
-  - 주요 프로젝트: 공공입찰 분석 플랫폼, 스마트 약속 관리 앱, 워치 기반 긴급 알림 시스템
+## 💼 Experience
 
-- **(주)핫셀러 개발사업부 인턴** (2026.01 ~ 2026.03)
-  - 브랜드 키워드 인텔리전스 서비스 설계 및 구현
-  - 사내 마케팅 부서의 브랜드 데이터 수동 수집 및 분석 업무 자동화
+### 이연에프엔씨 \| AI전략실 인턴
 
+`2026.07 ~ 현재`
+
+#### 244개 매장 영업시간 수집·DB 반영 자동화
+
+-   매장 운영시간 준수 여부 확인을 위해 **2개 브랜드 244개 매장의
+    영업시간 수집·정규화·DB 반영 자동화**
+-   휴무·24시간 영업·익일 마감 등 예외를 정규화하고 매장 단위
+    Transaction을 적용해 유효 데이터가 확인된 **206개 매장을 운영 DB에
+    반영**
+-   매장별 네이버 플레이스 확인·엑셀 작성·SQL 업데이트가 필요했던 작업을
+    **약 5분 내 주기적으로 실행 가능한 프로세스로 전환**
+
+#### AI Agent 기반 Crawler Guard
+
+-   외부 사이트 변경으로 크롤링 장애가 장기간 감지되지 않은 사례를
+    계기로 **실제 수집 전 파싱 이상을 탐지하는 Preflight Guard 개발**
+-   장애 탐지 시 AI Agent가 격리 환경에서 Parser·Selector만 수정하도록
+    제한하고 **Snapshot·현재 HTML 이중 검증 후 승인된 경우에만 실제 수집
+    실행**
+-   Adapter Pattern과 수집·트리거·메일 모듈 분리 구조를 적용해 확장성을
+    고려하고 운영 크롤러에 적용해 정상 실행 검증
+
+> 회사 내부 코드, 운영 URL, DB 구조 등 비공개 정보는 공개하지 않습니다.
+
+### 핫셀러 \| 개발사업부 인턴
+
+`2026.01 ~ 2026.03`
+
+#### KeywordLog \| 브랜드 검색·평판 분석 시스템
+
+-   마케팅 담당자가 매일 약 30분씩 수동 확인하던 검색 순위와
+    블로그·카페·지식인 브랜드 언급 데이터를 **자동 수집**
+-   OpenAI로 게시글의 감성·주제·광고성 여부를 분석하고 마케팅팀 피드백을
+    반영해 **KPI·누적 시계열 중심 대시보드로 개선**
+-   자사·경쟁사의 검색 순위·점유율 변화를 비교해 **방어/개선 및 신규
+    타겟 키워드를 추천**하고 후속 대응 판단 지원
+
+> 회사 계정 및 사내 저장소에서 개발한 프로젝트로 소스 코드는 공개하지
+> 않습니다.
+
+------------------------------------------------------------------------
+
+## 🚀 Selected Work
+
+### Bidvisor \| Frontend Leader · SSAFY Team Project
+
+**공공입찰 데이터와 AI 문서 분석을 활용한 입찰 의사결정 지원 플랫폼**
+
+-   팀 개발 전 pages/features 중심 디렉터리 구조와 **컴포넌트·상태관리
+    기준을 설계·문서화**해 프론트엔드 개발 규칙 통일
+-   OpenAI 자격요건 분석의 최대 1분 응답 지연에 TanStack Query 캐싱과 DB
+    저장을 적용해 **동일 공고의 반복 API 호출·대기 제거**
+
+`React` `TypeScript` `TanStack Query` `Zustand` `OpenAI API`
+
+### SaveHeart \| Android / Wear OS · SSAFY Team Project
+
+**Galaxy Watch 기반 이상 징후 감지 및 긴급 신고 서비스**
+
+-   Wear ↔ Mobile 통신을 위해 MessageClient의 기능별 **Path 규약과 단일
+    Listener 구조를 직접 설계·문서화**
+-   Android 백그라운드 제약으로 BroadcastReceiver가 동작하지 않는 문제를
+    분석해 **Listener → ForegroundService 직접 실행 구조로 변경**
+
+`Android` `Wear OS` `MessageClient` `Room` `ForegroundService`
+
+> SSAFY 프로젝트는 GitLab을 통해 협업했습니다. 공개 가능한 소스
+> 링크가 있는 경우에만 추가합니다.
+
+------------------------------------------------------------------------
 
 ## 🛠 Tech Stack
 
-### 💻 Frontend
+### Backend / Data
 
-**Language**
-<br/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+`Python` `FastAPI` `Java` `Spring Boot` `PostgreSQL` `MySQL`
 
-**Framework / Library**
-<br/>
-<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
-<img src="https://img.shields.io/badge/React%20Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white"/>
-<img src="https://img.shields.io/badge/Zustand-000000?style=for-the-badge&logoColor=white"/>
-<img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white"/>
+### Frontend
 
----
+`React` `TypeScript` `TanStack Query` `Zustand`
 
-### 🧩 Backend
+### Automation / AI
 
-<br/>
-<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
+`Requests` `Playwright` `OpenAI API` `Codex CLI`
 
----
+### Tools
 
-### 🗄 Database
+`Git` `GitHub` `Jira` `Postman`
 
-<br/>
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-<img src="https://img.shields.io/badge/DBeaver-382923?style=for-the-badge&logo=dbeaver&logoColor=white"/>
+------------------------------------------------------------------------
 
----
+## 🔍 What I Focus On
 
-### ⚙️ Tools & Collaboration
+-   반복되는 수작업을 찾아 **데이터 수집·정제·저장까지 자동화**
+-   외부 시스템 변화와 예외 상황을 고려한 **안정적인 운영 구조 설계**
+-   AI를 기능 자체보다 **실제 업무 문제를 해결하는 도구로 활용**
+-   현업 사용자의 피드백을 반영해 **데이터를 의사결정에 활용할 수 있는
+    형태로 제공**
 
-<br/>
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
+------------------------------------------------------------------------
 
----
+## 🚶‍♂️ Journey
 
-## ✨ What I Focus On
+### 명지대학교 \| 경영정보학과
 
-- Next.js App Router 기반의 **서버·클라이언트 역할 분리**
-- SSR/SSG를 활용한 **초기 로딩 속도 및 SEO 개선**
-- React Query와 결합한 **서버 데이터 캐싱 전략**
-- 상태 관리(Zustand/Redux)와 서버 데이터의 책임 분리
-- 복잡한 데이터를 사용자가 빠르게 판단할 수 있는 UI 흐름 설계
+`2018.03 ~ 2024.02` 
+- 비즈니스 데이터 분석, ERP, 프로그래밍 및
+정보시스템 관련 학습
+
+### 멀티캠퍼스 \| 백엔드(Java) 개발자 부트캠프
+
+`2023.09 ~ 2024.01` 
+- Java·Spring 기반 서버 구조 및 REST API 개발 학습
+
+### 삼성 청년 소프트웨어 아카데미 (SSAFY) 12기
+
+`2024.07 ~ 2025.06` 
+- React·TypeScript 기반 Frontend와 Java·Spring Boot 기반 Backend 개발
+- 팀 프로젝트에서 UI 구조 설계, 데이터 흐름 정리 및 기능 단위 협업
+- 공공입찰 분석 플랫폼, 스마트 약속 관리 앱, Wear OS 기반 긴급 알림 시스템 개발
+
+------------------------------------------------------------------------
+
